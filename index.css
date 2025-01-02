@@ -16,6 +16,13 @@
 .btn-primary:hover{
     background-color: #cd7715;
 }
+
+.text-light-gray{
+    color: rgb(102, 100, 100);
+}
+
+
+
 header{
     background-color:#e9c8a3 ;
     max-width: 1920px;
@@ -69,6 +76,49 @@ header{
 }
 
 
+main{
+    width: 80%;
+    max-width: 1440px;
+    margin: 200px auto;
+}
+
+.features-text{
+    color: #cd7715;
+}
+
+.team-text-container>p{
+    margin: 10px 0px;
+}
+
+.team-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-container>.team-text-container{
+    width: 40%;
+   
+}
+
+.team-images{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+  width: 50%;
+}
+
+.team-images>img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:576px){
     .container-text{
@@ -85,6 +135,27 @@ header{
        
         
     }
+
+    .team-container{
+       flex-direction: column-reverse;
+       
+    }
+    .team-container>.team-text-container{
+        width: 90%;
+        text-align: center;
+        margin-bottom: 30px;
+       
+    }
+    .team-images{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        width: 90%;
+      }
+      
+      .team-images>img{
+          width: 100%;
+      }
 }
 @media screen and (min-width:576px) and (max-width:870px) {
     .container-text{
@@ -93,3 +164,4 @@ header{
        text-align: center;
     }
 }
+
