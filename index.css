@@ -79,7 +79,7 @@ header{
 main{
     width: 80%;
     max-width: 1440px;
-    margin: 200px auto;
+    margin: 100px auto;
 }
 
 .features-text{
@@ -113,14 +113,64 @@ main{
 }
 
 
+/* features styles */
+.features-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+   
+}
 
+.features-des-container{
+    width: 40%;
+}
 
+.features-header{
+    margin-bottom: 30px;
+}
 
+.features-header>p{
+    margin-top: 5px;
+}
 
+.card{
+    padding: 30px 0px;
+}
 
+.card>p {
+  margin-top: 5px;
+}
 
+.features-img{
+    width: 50%;
+    position: relative;
+}
+
+.features-img>img{
+    width: 100%;
+}
+
+.features-img>button{
+    padding: 50px 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 600px;
+    left: -50px;
+}
+
+.features-img>button>span{
+    font-weight: normal;
+    font-size: 1rem;
+    display: block;
+}
 
 @media screen and (max-width:576px){
+
+    main{
+        margin: 70px auto;
+    }
     .container-text{
         width: 80%;
        margin: 30px auto;
@@ -136,7 +186,7 @@ main{
         
     }
 
-    .team-container{
+    .team-container,.features-container{
        flex-direction: column-reverse;
        
     }
@@ -153,15 +203,80 @@ main{
         width: 90%;
       }
       
-      .team-images>img{
+      .team-images>img, .features-img, .features-des-container{
           width: 100%;
       }
+      
+      .card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        gap: 10px;
+      }
+      .features-img>button{
+        /* padding: 50px 30px;
+        font-size: 2.5rem;
+        font-weight: 700; */
+        position: static;
+       
+    }
+
+    .features-des-container{
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .features-container{
+        margin-top: 90px;
+    }
+
 }
+
+
 @media screen and (min-width:576px) and (max-width:870px) {
     .container-text{
         width: 70%;
        margin: 30px auto;
        text-align: center;
     }
+
+    .features-container{
+      flex-direction: column-reverse;
+      margin-top: 90px;
+    }
+
+    .team-container{
+        flex-direction: column;
+        
+    }
+
+    .team-container>.team-images{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .team-container>.team-text-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    .features-img, .features-des-container{
+      width: 100%;
+
+    }
+     .features-des-container{
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .features-img>button{
+        /* padding: 50px 30px;
+        font-size: 2.5rem;
+        font-weight: 700; */
+        position: static;
+       
+    }
+
+
 }
 
